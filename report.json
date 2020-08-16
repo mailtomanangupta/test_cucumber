@@ -1,0 +1,107 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Validate Dates",
+        "description": "",
+        "id": "date-validation;validate-dates;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 55793171,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Due Date \"2020-09-11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-09-11\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Definitions.setDueDate(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 136578,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Trade Date \"2020-08-11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-08-11\"",
+                  "offset": 11
+                }
+              ],
+              "location": "Definitions.setTradeDate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101482,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Extension Date \"2020-10-11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2020-10-11\"",
+                  "offset": 15
+                }
+              ],
+              "location": "Definitions.setExtensionDate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38108,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "dates are checked",
+            "match": {
+              "location": "Definitions.validate()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1656188,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "error count should be 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 22
+                }
+              ],
+              "location": "Definitions.assertResult(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Date Validation",
+    "description": "",
+    "id": "date-validation",
+    "keyword": "Feature",
+    "uri": "list.feature",
+    "tags": []
+  }
+]
